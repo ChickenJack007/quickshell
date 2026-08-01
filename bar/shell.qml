@@ -22,6 +22,7 @@ ShellRoot {
     	        anchors.leftMargin: 12
     	        anchors.rightMargin: 12
 
+		Icon {}
 		Workspaces {}
 		Clock { anchors.centerIn: parent }
 
