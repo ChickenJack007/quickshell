@@ -19,8 +19,8 @@ ShellRoot {
     	    color: "#1e1e2e"
     	    RowLayout {
     	        anchors.fill: parent
-    	        anchors.leftMargin: 12
-    	        anchors.rightMargin: 12
+    	        anchors.leftMargin: 3
+    	        anchors.rightMargin: 10
 
 		Icon {}
 		Workspaces {}
