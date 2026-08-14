@@ -14,26 +14,36 @@ ShellRoot {
     	        left:true
     	        right:true
     	    }
-    	    implicitHeight: 30
-    	    //color: "#313244"
-    	    color: "#1e1e2e"
-    	    RowLayout {
-    	        anchors.fill: parent
-    	        anchors.leftMargin: 3
-    	        anchors.rightMargin: 10
-
-		Icon {}
-		Workspaces {}
-		Clock { anchors.centerIn: parent }
-
-    	        Item { Layout.fillWidth: true }
+	    margins.top: 3
+	    margins.right: 8
+	    margins.left: 8
+	    //implicitWidth: 500
+    	    implicitHeight: 25
+    	    //color: "#ed1e1e2e"
+	    color: "transparent"
+	    Rectangle {
+		anchors.fill: parent
+		color: "#dd1e1e2e"
+		radius: 20
 		RowLayout {
-		    //Layout.alignment: Qt.AlignRight
-		    spacing: 12
-		    Volume {}
-		    Network {}
-		    Battery {}
-		}
+    	    	    anchors.fill: parent
+    	    	    anchors.leftMargin: 10
+    	    	    anchors.rightMargin: 10
+
+	    	    Icon {}
+	    	    Workspaces {}
+	    	    //Clock { anchors.centerIn: parent }
+
+    	    	    Item { Layout.fillWidth: true }
+	    	    RowLayout {
+	    	        //Layout.alignment: Qt.AlignRight
+	    	        spacing: 10 
+	    	        Volume {}
+	    	        Network {}
+	    	        Battery {}
+	    	        Clock {}
+	    	    }
+	    	}
 	    }
 
     	}

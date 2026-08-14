@@ -5,7 +5,7 @@ import QtQuick.Layouts
 
 RowLayout {
     id: root
-    spacing: 6
+    spacing: 3
 
     property var battery: UPower.displayDevice
     property bool charging: battery.state === UPowerDeviceState.Charging

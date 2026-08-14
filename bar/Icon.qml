@@ -2,10 +2,10 @@ import Quickshell
 import QtQuick
 
 Rectangle {
-    implicitWidth: 25
-    implicitHeight: 20
-    radius: 6
-    color: "#181825"
+    implicitWidth: 20
+    implicitHeight: 18
+    radius: 3
+    color: "#bc181825"
     Text {
 	anchors.centerIn: parent
         text: "󰣇"
@@ -13,7 +13,7 @@ Rectangle {
         font {
 	   family: "SF Pro Display"
 	   //letterSpacing: 
-	   pixelSize: 16
+	   pixelSize: 14
 	   weight: 700
         }
     }

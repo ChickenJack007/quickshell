@@ -5,7 +5,7 @@ import QtQuick.Layouts
 
 RowLayout {
     id:root
-    spacing: 5
+    spacing: 3
 
     property var sink: Pipewire.defaultAudioSink
     readonly property bool ready: sink && sink.ready
@@ -28,7 +28,7 @@ RowLayout {
 	color: "#cdd6f4"
 	font {
 	    family: "JetBrainsMono Nerd Font Propo"
-	    pixelSize: 14
+	    pixelSize: 13
 	}
     }
 

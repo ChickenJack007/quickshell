@@ -5,7 +5,7 @@ import QtQuick.Layouts
 
 RowLayout {
     id:root
-    spacing: 6
+    spacing: 3
 
     property var wifiDevice: Networking.devices.values.find(d => d.type === DeviceType.Wifi)
     property var wiredDevice: Networking.devices.values.find(d => d.type === DeviceType.Wired)
@@ -30,7 +30,7 @@ RowLayout {
 	color: Networking.wifiEnabled ? !root.active ? "#f38ba8" : "#cdd6f4" : eactive ? "#cdd6f4" : "#9399b2"
 	font {
 	    family: "JetBrainsMono Nerd Font Propo"
-	    pixelSize: 13
+	    pixelSize: 12
 	}
     }
     MouseArea {
