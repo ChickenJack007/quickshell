@@ -49,8 +49,17 @@ RowLayout {
     PwObjectTracker {
 	objects: [root.sink]
     }
-    //MouseArea {
-    //    anchors.fill: parent
-    //    onClicked: Quickshell.execDetached("hyprpwcenter")
-    //}
+    MouseArea {
+        anchors.fill: parent
+	onClicked: {
+	    const sink = Pipewire.defaultAudioSink;
+	    if (sink && sink.audio) sink.audio.muted = !sink.audio.muted;
+	}
+	onWheel: (wheel) => {
+	    const sink = Pipewire.defaultAudioSink;
+            if (!sink || !sink.audio) return;
+            const delta = wheel.angleDelta.y > 0 ? 0.01 : -0.01;
+            sink.audio.volume = Math.max(0, Math.min(1.5, sink.audio.volume + delta));
+	}
+    }
 }

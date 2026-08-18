@@ -33,7 +33,7 @@ Scope {
 
     Timer {
 	id: hideVolTimer
-	interval: 1000
+	interval: 1500
 	onTriggered: root.shouldShowVol = false
     }
 
@@ -85,7 +85,7 @@ Scope {
     }
     Timer {
 	id: hideBriTimer
-	interval: 1000
+	interval: 1500
 	onTriggered: root.showBrightness = false
     }
 
