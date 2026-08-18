@@ -14,17 +14,17 @@ ShellRoot {
     	        left:true
     	        right:true
     	    }
-	    margins.top: 3
-	    margins.right: 8
-	    margins.left: 8
+	    //margins.top: 3
+	    //margins.right: 8
+	    //margins.left: 8
 	    //implicitWidth: 500
     	    implicitHeight: 25
     	    //color: "#ed1e1e2e"
 	    color: "transparent"
 	    Rectangle {
 		anchors.fill: parent
-		color: "#dd1e1e2e"
-		radius: 20
+		color: "#d01e1e2e"
+		//radius: 20
 		RowLayout {
     	    	    anchors.fill: parent
     	    	    anchors.leftMargin: 10
@@ -37,8 +37,9 @@ ShellRoot {
     	    	    Item { Layout.fillWidth: true }
 	    	    RowLayout {
 	    	        //Layout.alignment: Qt.AlignRight
-	    	        spacing: 10 
+	    	        spacing: 8.5 
 	    	        Volume {}
+			Tray {}
 	    	        Network {}
 	    	        Battery {}
 	    	        Clock {}

@@ -5,7 +5,8 @@ Rectangle {
     implicitWidth: 20
     implicitHeight: 18
     radius: 3
-    color: "#bc181825"
+    //color: "#bc181825"
+    color: "transparent"
     Text {
 	anchors.centerIn: parent
         text: "󰣇"
