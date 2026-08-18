@@ -105,7 +105,7 @@ Scope {
 	    exclusiveZone: 0
 
 	    implicitWidth: 200
-	    implicitHeight: 40
+	    implicitHeight: 45
 	    color: "transparent"
 
 	    mask: Region {}
@@ -114,7 +114,7 @@ Scope {
 		visible: root.shouldShowVol
 		anchors.fill: parent
 		radius: height / 2
-		anchors.bottomMargin: 20
+		anchors.bottomMargin: 25
 
 		Behavior on opacity { NumberAnimation { duration: 150}}
 		color: "#801e1e2e"
@@ -180,7 +180,7 @@ Scope {
 		visible: root.showBrightness
 		anchors.fill: parent
 		radius: height / 2
-		anchors.topMargin: 20
+		anchors.topMargin: 25
 
 		Behavior on opacity { NumberAnimation { duration: 150}}
 		color: "#801e1e2e"
