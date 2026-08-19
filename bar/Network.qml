@@ -5,7 +5,7 @@ import QtQuick.Layouts
 
 RowLayout {
     id:root
-    spacing: 3
+    spacing: 2
 
     property var wifiDevice: Networking.devices.values.find(d => d.type === DeviceType.Wifi)
     property var wiredDevice: Networking.devices.values.find(d => d.type === DeviceType.Wired)

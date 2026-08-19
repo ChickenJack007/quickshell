@@ -37,7 +37,7 @@ ShellRoot {
     	    	    Item { Layout.fillWidth: true }
 	    	    RowLayout {
 	    	        //Layout.alignment: Qt.AlignRight
-	    	        spacing: 8.5 
+	    	        spacing: 7.5 
 	    	        Volume {}
 			Tray {}
 	    	        Network {}

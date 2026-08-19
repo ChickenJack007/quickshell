@@ -5,7 +5,7 @@ import QtQuick.Layouts
 
 RowLayout {
     id:root
-    spacing: 3
+    spacing: 2
 
     property var sink: Pipewire.defaultAudioSink
     readonly property bool ready: sink && sink.ready

@@ -96,12 +96,12 @@ Scope {
 		spacing: 12
 
 		//header
-		Text {
-		    text: "Applications"
-		    color: "#c889b4fa"
-		    font.pixelSize: 12
-		    font.bold: true
-		}
+		//Text {
+		//    text: "Applications"
+		//    color: "#c889b4fa"
+		//    font.pixelSize: 12
+		//    font.bold: true
+		//}
 
 		//search bar
 		Rectangle {
