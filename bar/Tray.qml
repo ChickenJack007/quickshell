@@ -6,45 +6,6 @@ import Quickshell.Io
 import Quickshell.Services.SystemTray
 import Quickshell.Widgets
 
-//RowLayout {
-//    id: root
-//    spacing: 4
-//    Repeater {
-//	model: SystemTray.items
-//    
-//	delegate: Item {
-//	    required property SystemTrayItem modelData
-//	    Layout.preferredWidth: 13
-//	    Layout.preferredHeight: 12
-//    
-//	    Image {
-//		anchors.fill: parent
-//		source: modelData.icon
-//		fillMode: Image.PreserveAspectFit
-//		smooth: true
-//		sourceSize.width: 16
-//		sourceSize.height: 16
-//	    }
-//    
-//	    MouseArea {
-//		anchors.fill: parent
-//		acceptedButtons: Qt.LeftButton | Qt.RightButton
-//		cursorShape: Qt.pointingHandCursor
-//    
-//		onClicked: mouse => {
-//		    if (mouse.button === Qt.LeftButton) {
-//			modelData.activate();
-//		    } else if (mouse.button === Qt.RightButton) {
-//			if (modelData.hasMenu) {
-//			    modelData.display(root, mouse.x, mouse.y);
-//
-//			}
-//		    }
-//		}
-//	    }
-//        }
-//    }
-//}
 RowLayout {
     id: trayIcons
     spacing: 4
@@ -59,7 +20,7 @@ RowLayout {
 	    Accessible.role: Accessible.Button
 	    Accessible.name: modelData.tooltipTitle || modelData.title || "System tray item"
 
-	    Layout.preferredWidth: 13
+	    Layout.preferredWidth: 12
     	    Layout.preferredHeight: 12
 
     	    acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MiddleButton

@@ -107,6 +107,7 @@ Scope {
 	    implicitWidth: 200
 	    implicitHeight: 45
 	    color: "transparent"
+	    visible: root.shouldShowVol || root.showBrightness
 
 	    mask: Region {}
 

@@ -85,7 +85,7 @@ Scope {
 	    anchors.centerIn: parent
 	    width: 700
 	    height: 500
-	    radius: 8
+	    radius: 4
 	    color: "#d01e1e2e"
 	    border.color: "#89b4fa"
 	    border.width: 1
@@ -107,7 +107,7 @@ Scope {
 		Rectangle {
 		    Layout.fillWidth: true
 		    height: 44
-		    radius: 10
+		    radius: 6
 		    color: "#98181825"
 		    border.color: "#b889b4fa"
 		    border.width: 1
@@ -193,11 +193,11 @@ Scope {
 		    spacing: 2
 		    boundsBehavior: Flickable.StopAtBounds
 		    currentIndex: root.selectedIndex
-		    highlightMoveDuration: 150
-		    highlightMoveVelocity: -1
+		    highlightMoveDuration: 100
+		    highlightMoveVelocity: -2
 
 		    highlight: Rectangle {
-			radius: 8
+			radius: 6
 			color: "#887f849c"
 			visible: root.selectedIndex >= 0
 
@@ -222,7 +222,7 @@ Scope {
 
 			width: resultsList.width
 			height: 44
-			radius: 8
+			radius: 6
 			color: "transparent"
 
 			RowLayout {
