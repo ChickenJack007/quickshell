@@ -9,4 +9,5 @@ Scope {
     Bar {}
     Osd {}
     AppLauncher {}
+    Notification {}
 }
